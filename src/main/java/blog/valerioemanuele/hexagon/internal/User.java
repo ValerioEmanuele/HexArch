@@ -1,8 +1,10 @@
-package blog.valerioemanuele.model;
+package blog.valerioemanuele.hexagon.internal;
 
 import java.time.LocalDate;
 
-public class User {
+import blog.valerioemanuele.hexagon.drivenport.forpersistingdata.UserData;
+
+class User {
 	private String name;
 	private String surname;
 	private String email;
@@ -44,5 +46,14 @@ public class User {
 	public boolean isBirthday(int monthValue, int dayOfMonth) {
 		return this.birthDate.getDayOfMonth() == dayOfMonth 
 				&& this.birthDate.getMonthValue() == monthValue;
+	}
+
+	public static User fromUserData(UserData ud) {
+		User u = new User();
+		u.setName(ud.name());
+		u.setSurname(ud.surname());
+		u.setEmail(ud.email());
+		u.setBirthDate(ud.birthDate());
+		return u;
 	}
 }
