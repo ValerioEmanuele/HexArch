@@ -1,5 +1,7 @@
 package blog.valerioemanuele.adapter.driver;
 
+import java.time.LocalDate;
+
 import blog.valerioemanuele.hexagon.driverport.formanagingbirthdays.BirthdayService;
 
 /*
@@ -16,7 +18,8 @@ public class TestBirthdayServiceAdapter {
 	}
 
 	public void run() {
-		System.out.println("Testing BirthdayService...");
+		LocalDate testDate = LocalDate.of(0, 10, 27);
+		birthdayService.wishHappyBirthday(testDate);
 	}
 	
 }
