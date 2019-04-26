@@ -1,4 +1,4 @@
-#Architettura Esagonale
+# Architettura Esagonale
 
 Nell’esempio è implementata un’applicazione che legge da un repository una collezione di utenti ed invia un messaggio di auguri a quelli che compiono gli anni nella data passata in input.
 
