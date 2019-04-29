@@ -10,12 +10,11 @@ Nell’esempio è implementata un’applicazione che legge da un repository una colle
 
 ## Eseguire l'Esagono
 
-### Eseguire con Junit
-Il test può essere eseguito lanciando il comando `mvn install` oppure lanciando la classe `blog.valerioemanuele.adapter.driver.BirthdayServiceJunitAdapterTest` come unit test.
+### Eseguire con maven
+L'applicazione può eseguita lanciando il comando `mvn install` 
 
 ### Eseguire con il main()
-Ho predisposto anche un metodo main nel quale viene impostato tutto l'esagono (porta driver + porte driven) ed eseguito.
-Per eseguire l'esagono in tale modalità lanciare come applicazione Java la classe `blog.valerioemanuele.main.Main`
+In altearnativa a maven, l'applicazione può essere eseguita come applicazione Java standard tramite la classe `blog.valerioemanuele.main.Main`
 
 ## Requirements
 L'applicativo è stato realizzato con:
