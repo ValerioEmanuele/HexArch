@@ -1,4 +1,4 @@
-package blog.valerioemanuele.adapter.driven;
+package blog.valerioemanuele.hexagon.dto;
 
 import java.time.LocalDate;
 
@@ -7,7 +7,7 @@ import lombok.Builder;
 import lombok.Data;
 
 @Builder @Data
-public class UserDataAdapter implements UserData {
+public class FileUserData implements UserData {
 
 	private String name;
 	private String surname;
