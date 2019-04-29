@@ -1,23 +1,21 @@
-# Architettura Esagonale
+# Hexagonal Architecture - Simple Java 8 Example
+In the example is implemented an application that reads a collection of users from a repository and sends a greeting message to those who turn the years on the input date.
 
-Nell'esempio è implementata un'applicazione che legge da un repository una collezione di utenti ed invia un messaggio di auguri a quelli che compiono gli anni nella data passata in input.
+## Scheme of Primary Actor and Secondary Actors
+![Scheme of HexArch](https://i1.wp.com/valerioemanuele.blog/wp-content/uploads/2019/04/Esempio-Esagono.png?ssl=1)
 
-## Schema Attore Primario e Attori Secondari
-![Schema dell'architettura esagonale](https://i1.wp.com/valerioemanuele.blog/wp-content/uploads/2019/04/Esempio-Esagono.png?ssl=1)
+## Port and Adapter Scheme
+![Scheme of HexArch Port and Adapter Scheme](https://i2.wp.com/valerioemanuele.blog/wp-content/uploads/2019/04/Esempio-Concreto-Esagono.png?ssl=1)
 
-## Schema Porte e Adapter
-![Schema dell'architettura esagonale porte e adapter](https://i2.wp.com/valerioemanuele.blog/wp-content/uploads/2019/04/Esempio-Concreto-Esagono.png?ssl=1)
+## Run the Hexagon
 
-## Eseguire l'Esagono
+### Run with maven
+The application can run by launching the command `mvn install` 
 
-### Eseguire con maven
-L'applicazione può eseguita lanciando il comando `mvn install` 
-
-### Eseguire con il main()
-In altearnativa a maven, l'applicazione può essere eseguita come applicazione Java standard tramite la classe `blog.valerioemanuele.main.Main`
+### Run with main()
+As an alternative to maven, the application can be run as a standard Java application through the class `blog.valerioemanuele.main.Main`
 
 ## Requirements
-L'applicativo richiede:
-- Eclipse versione 2018-12 (4.10.0) o superiore
-- Java 8 o superiore
-- JUnit 5 o superiore
+- Eclipse version 2018-12 (4.10.0) or higher
+- Java 8 or higher
+- JUnit 5 or higher
