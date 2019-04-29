@@ -7,8 +7,8 @@ public class Main {
 	public static void main(String[] args) {
 		try {
 			//driver adapter
-			BirthdayServiceJunitAdapterTest testBirthdayServiceAdapter = new BirthdayServiceJunitAdapterTest();
-			testBirthdayServiceAdapter.testOfExistingUser(HexagonFactory.instance());
+			BirthdayServiceJunitAdapterTest testBirthdayServiceAdapter = new BirthdayServiceJunitAdapterTest(HexagonFactory.instance());
+			testBirthdayServiceAdapter.testOfExistingUser();
 						
 		} catch (Exception e) {
 			e.printStackTrace();

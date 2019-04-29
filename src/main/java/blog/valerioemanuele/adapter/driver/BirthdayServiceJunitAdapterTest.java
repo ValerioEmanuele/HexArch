@@ -15,9 +15,14 @@ import blog.valerioemanuele.hexagon.driverport.formanagingbirthdays.BirthdayServ
 @ExtendWith(BirthdayServiceParameterResolver.class)
 public class BirthdayServiceJunitAdapterTest {
 
+	private BirthdayService birthdayService;
+	
+	public BirthdayServiceJunitAdapterTest(BirthdayService birthdayService) {
+		this.birthdayService = birthdayService;
+	}
 	
 	@Test
-	public void testOfExistingUser(BirthdayService birthdayService) {
+	public void testOfExistingUser() {
 		LocalDate testDate = LocalDate.of(0, 10, 27);
 		assertDoesNotThrow(() -> birthdayService.wishHappyBirthday(testDate));
 	}
