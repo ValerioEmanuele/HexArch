@@ -18,3 +18,4 @@ As an alternative to maven, the application can be run as a standard Java applic
 ## Requirements
 - Java 8 or higher
 - JUnit 5 or higher
+- Maven 3
