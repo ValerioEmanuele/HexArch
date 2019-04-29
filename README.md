@@ -1,6 +1,6 @@
 # Architettura Esagonale
 
-Nell’esempio è implementata un’applicazione che legge da un repository una collezione di utenti ed invia un messaggio di auguri a quelli che compiono gli anni nella data passata in input.
+Nell'esempio è implementata un'applicazione che legge da un repository una collezione di utenti ed invia un messaggio di auguri a quelli che compiono gli anni nella data passata in input.
 
 ## Schema Attore Primario e Attori Secondari
 ![Schema dell'architettura esagonale](https://i1.wp.com/valerioemanuele.blog/wp-content/uploads/2019/04/Esempio-Esagono.png?ssl=1)
@@ -17,6 +17,7 @@ L'applicazione può eseguita lanciando il comando `mvn install`
 In altearnativa a maven, l'applicazione può essere eseguita come applicazione Java standard tramite la classe `blog.valerioemanuele.main.Main`
 
 ## Requirements
-L'applicativo è stato realizzato con:
-- Eclipse versione 2018-12 (4.10.0)
-- Java 8
+L'applicativo richiede:
+- Eclipse versione 2018-12 (4.10.0) o superiore
+- Java 8 o superiore
+- JUnit 5 o superiore
