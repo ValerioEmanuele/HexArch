@@ -11,9 +11,9 @@ import java.util.Optional;
 
 import org.apache.commons.io.FileUtils;
 
-import blog.valerioemanuele.hexagon.drivenport.forpersistingdata.UserData;
 import blog.valerioemanuele.hexagon.drivenport.forpersistingdata.UserRepository;
-import blog.valerioemanuele.hexagon.dto.FileUserData;
+import blog.valerioemanuele.hexagon.dto.UserDataImpl;
+import blog.valerioemanuele.hexagon.dto.UserData;
 
 public class UserRepositoryFileAdapter implements UserRepository {
 
@@ -38,7 +38,7 @@ public class UserRepositoryFileAdapter implements UserRepository {
 			for(String line : lines) {
 				String[] u = line.split(",");
 				
-				UserData user = FileUserData
+				UserData user = UserDataImpl
 									.builder()
 									.name(u[0])
 									.surname(u[1])

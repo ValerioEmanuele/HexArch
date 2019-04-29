@@ -2,18 +2,16 @@ package blog.valerioemanuele.hexagon.dto;
 
 import java.time.LocalDate;
 
-import blog.valerioemanuele.hexagon.drivenport.forpersistingdata.UserData;
 import lombok.Builder;
 import lombok.Data;
 
 @Builder @Data
-public class FileUserData implements UserData {
+public class UserDataImpl implements UserData {
 
 	private String name;
 	private String surname;
 	private String email;
 	private LocalDate birthDate;
-	
 	
 	@Override
 	public String name() {

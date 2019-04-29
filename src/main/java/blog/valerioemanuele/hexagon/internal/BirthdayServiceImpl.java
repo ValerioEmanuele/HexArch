@@ -6,9 +6,9 @@ import java.util.Collection;
 import java.util.Optional;
 
 import blog.valerioemanuele.hexagon.drivenport.fornotifyingmessages.Notify;
-import blog.valerioemanuele.hexagon.drivenport.forpersistingdata.UserData;
 import blog.valerioemanuele.hexagon.drivenport.forpersistingdata.UserRepository;
 import blog.valerioemanuele.hexagon.driverport.formanagingbirthdays.BirthdayService;
+import blog.valerioemanuele.hexagon.dto.UserData;
 
 class BirthdayServiceImpl implements BirthdayService{
 
