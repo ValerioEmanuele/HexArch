@@ -16,6 +16,5 @@ The application can run by launching the command `mvn install`
 As an alternative to maven, the application can be run as a standard Java application through the class `blog.valerioemanuele.main.Main`
 
 ## Requirements
-- Eclipse version 2018-12 (4.10.0) or higher
 - Java 8 or higher
 - JUnit 5 or higher
