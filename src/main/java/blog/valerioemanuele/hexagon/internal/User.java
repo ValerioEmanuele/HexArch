@@ -2,7 +2,7 @@ package blog.valerioemanuele.hexagon.internal;
 
 import java.time.LocalDate;
 
-import blog.valerioemanuele.hexagon.dto.UserData;
+import blog.valerioemanuele.hexagon.drivenport.forpersistingdata.UserData;
 
 class User {
 	private String name;

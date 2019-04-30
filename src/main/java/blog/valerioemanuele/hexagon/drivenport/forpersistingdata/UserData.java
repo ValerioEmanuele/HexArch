@@ -1,4 +1,4 @@
-package blog.valerioemanuele.hexagon.dto;
+package blog.valerioemanuele.hexagon.drivenport.forpersistingdata;
 
 import java.time.LocalDate;
 

@@ -1,7 +1,8 @@
-package blog.valerioemanuele.hexagon.dto;
+package blog.valerioemanuele.adapter.driven;
 
 import java.time.LocalDate;
 
+import blog.valerioemanuele.hexagon.drivenport.forpersistingdata.UserData;
 import lombok.Builder;
 import lombok.Data;
 

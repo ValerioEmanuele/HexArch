@@ -11,9 +11,8 @@ import java.util.Optional;
 
 import org.apache.commons.io.FileUtils;
 
+import blog.valerioemanuele.hexagon.drivenport.forpersistingdata.UserData;
 import blog.valerioemanuele.hexagon.drivenport.forpersistingdata.UserRepository;
-import blog.valerioemanuele.hexagon.dto.UserDataImpl;
-import blog.valerioemanuele.hexagon.dto.UserData;
 
 public class UserRepositoryFileAdapter implements UserRepository {
 
