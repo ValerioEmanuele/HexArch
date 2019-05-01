@@ -30,7 +30,7 @@ class BirthdayServiceImpl implements BirthdayService{
 				));
 	}
 	
-	private String wishMessage ( User aUser ) {
-		return MessageFormat.format ( "Happy birthday {0}!", aUser.getName() );
+	private String wishMessage (User aUser) {
+		return MessageFormat.format("Happy birthday {0}!", aUser.getName());
 	}
 }
