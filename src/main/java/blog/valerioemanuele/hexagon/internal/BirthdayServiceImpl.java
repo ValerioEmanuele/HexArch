@@ -15,7 +15,6 @@ class BirthdayServiceImpl implements BirthdayService{
 	private UserRepository userRepository;
 	private Notify notify;
 	
-	
 	public BirthdayServiceImpl(UserRepository userRepository, Notify notify) {
 		super();
 		this.userRepository = userRepository;
@@ -24,13 +23,13 @@ class BirthdayServiceImpl implements BirthdayService{
 
 	public void wishHappyBirthday(LocalDate birthDay) {
 		Optional<Collection<UserData>> userData = userRepository.findUsersBornOn(birthDay.getMonthValue(), birthDay.getDayOfMonth());
-		userData.ifPresent(
-				uc -> uc.stream().forEach(
-						ud -> notify.notify("Happy birthday!", wishMessage(User.fromUserData(ud)))
-				));
+		userData.ifPresent(uc -> uc.stream()
+									.map(User::fromUserData)
+									.forEach(u -> sendWishMessage(u))
+						  );
 	}
 	
-	private String wishMessage (User aUser) {
-		return MessageFormat.format("Happy birthday {0}!", aUser.getName());
+	private void sendWishMessage (User aUser) {
+		notify.notify("Happy birthday!", MessageFormat.format("Happy birthday {0}!", aUser.getName()));
 	}
 }
